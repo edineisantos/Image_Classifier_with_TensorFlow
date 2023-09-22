@@ -1,5 +1,5 @@
-# Use the official Scientific Jupyter Notebook Python Stack w/ TensorFlow
-FROM jupyter/tensorflow-notebook
+# Use the official Python 3.8 image
+FROM python:3.8
 
 # Set the working directory in the container
 WORKDIR /usr/src/app
