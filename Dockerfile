@@ -1,17 +1,11 @@
-# Use the official Python 3.8 image
-FROM python:3.8
+# Use the official tensorflow image as a parent image
+FROM tensorflow/tensorflow:latest-gpu-jupyter
 
-# Set the working directory in the container
-WORKDIR /usr/src/app
+# Make the directory for the project files
+RUN mkdir /tf/Image_Classifier_with_TensorFlow
+
+# Set the working directory to /tf
+WORKDIR /tf
 
 # Copy the current directory contents into the container
-COPY . .
-
-# Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Expose the port Jupyter will run on
-EXPOSE 8888
-
-# Command to run Jupyter Notebook
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--no-browser", "--allow-root"]
+COPY . /tf/Image_Classifier_with_TensorFlow
