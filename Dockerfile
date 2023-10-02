@@ -9,3 +9,6 @@ WORKDIR /tf
 
 # Copy the current directory contents into the container
 COPY . /tf/Image_Classifier_with_TensorFlow
+
+# Install any needed packages specified in requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
