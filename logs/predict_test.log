@@ -1,0 +1,336 @@
+2023-10-03 12:39:44,588 - INFO - Testing image: ./test_images/cautleya_spicata.jpg
+2023-10-03 12:39:44,588 - INFO - Parameters:
+image_path:  ./test_images/cautleya_spicata.jpg
+Model:  image_classifier_model.h5
+Top K:  5
+Category Names:  label_map.json
+Loading model...
+..........................................
+Summary of loaded model:
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ keras_layer (KerasLayer)    (None, 1280)              2257984   
+                                                                 
+ batch_normalization_8 (Bat  (None, 1280)              5120      
+ chNormalization)                                                
+                                                                 
+ dense_10 (Dense)            (None, 512)               655872    
+                                                                 
+ dropout_8 (Dropout)         (None, 512)               0         
+                                                                 
+ batch_normalization_9 (Bat  (None, 512)               2048      
+ chNormalization)                                                
+                                                                 
+ dense_11 (Dense)            (None, 256)               131328    
+                                                                 
+ dropout_9 (Dropout)         (None, 256)               0         
+                                                                 
+ batch_normalization_10 (Ba  (None, 256)               1024      
+ tchNormalization)                                               
+                                                                 
+ dense_12 (Dense)            (None, 128)               32896     
+                                                                 
+ dropout_10 (Dropout)        (None, 128)               0         
+                                                                 
+ batch_normalization_11 (Ba  (None, 128)               512       
+ tchNormalization)                                               
+                                                                 
+ dense_13 (Dense)            (None, 64)                8256      
+                                                                 
+ dropout_11 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_14 (Dense)            (None, 102)               6630      
+                                                                 
+=================================================================
+Total params: 3101670 (11.83 MB)
+Trainable params: 839334 (3.20 MB)
+Non-trainable params: 2262336 (8.63 MB)
+_________________________________________________________________
+..........................................
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 3s 3s/step
+Probabilities: [0.999285, 0.000256, 0.000111, 0.000106, 7.8e-05]
+Classes: ['cautleya spicata', 'red ginger', 'yellow iris', 'pink-yellow dahlia', 'pelargonium']
+
+2023-10-03 12:39:44,588 - ERROR - 2023-10-03 12:39:31.614355: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-03 12:39:31.614418: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-03 12:39:31.614448: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-03 12:39:31.623934: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 12:39:34.347950: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:34.354665: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:34.354761: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:34.357561: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:34.357684: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:34.357719: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:35.302043: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:35.302125: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:35.302136: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1977] Could not identify NUMA node of platform GPU id 0, defaulting to 0.  Your kernel may not have been built with NUMA support.
+2023-10-03 12:39:35.302171: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:35.302191: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4577 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1
+2023-10-03 12:39:42.050065: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8600
+
+2023-10-03 12:40:01,721 - INFO - Testing image: ./test_images/hard-leaved_pocket_orchid.jpg
+2023-10-03 12:40:01,722 - INFO - Parameters:
+image_path:  ./test_images/hard-leaved_pocket_orchid.jpg
+Model:  image_classifier_model.h5
+Top K:  5
+Category Names:  label_map.json
+Loading model...
+..........................................
+Summary of loaded model:
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ keras_layer (KerasLayer)    (None, 1280)              2257984   
+                                                                 
+ batch_normalization_8 (Bat  (None, 1280)              5120      
+ chNormalization)                                                
+                                                                 
+ dense_10 (Dense)            (None, 512)               655872    
+                                                                 
+ dropout_8 (Dropout)         (None, 512)               0         
+                                                                 
+ batch_normalization_9 (Bat  (None, 512)               2048      
+ chNormalization)                                                
+                                                                 
+ dense_11 (Dense)            (None, 256)               131328    
+                                                                 
+ dropout_9 (Dropout)         (None, 256)               0         
+                                                                 
+ batch_normalization_10 (Ba  (None, 256)               1024      
+ tchNormalization)                                               
+                                                                 
+ dense_12 (Dense)            (None, 128)               32896     
+                                                                 
+ dropout_10 (Dropout)        (None, 128)               0         
+                                                                 
+ batch_normalization_11 (Ba  (None, 128)               512       
+ tchNormalization)                                               
+                                                                 
+ dense_13 (Dense)            (None, 64)                8256      
+                                                                 
+ dropout_11 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_14 (Dense)            (None, 102)               6630      
+                                                                 
+=================================================================
+Total params: 3101670 (11.83 MB)
+Trainable params: 839334 (3.20 MB)
+Non-trainable params: 2262336 (8.63 MB)
+_________________________________________________________________
+..........................................
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 4s 4s/step
+Probabilities: [0.999802, 5.7e-05, 4.5e-05, 2.2e-05, 1.9e-05]
+Classes: ['hard-leaved pocket orchid', 'bearded iris', 'anthurium', 'giant white arum lily', 'bolero deep blue']
+
+2023-10-03 12:40:01,722 - ERROR - 2023-10-03 12:39:45.036797: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-03 12:39:45.036890: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-03 12:39:45.036927: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-03 12:39:45.045309: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 12:39:47.956667: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:47.962163: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:47.962252: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:47.968437: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:47.968636: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:47.968676: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:48.921600: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:48.921694: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:48.921709: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1977] Could not identify NUMA node of platform GPU id 0, defaulting to 0.  Your kernel may not have been built with NUMA support.
+2023-10-03 12:39:48.921748: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:39:48.921792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4577 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1
+2023-10-03 12:39:59.257637: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8600
+
+2023-10-03 12:40:16,723 - INFO - Testing image: ./test_images/orange_dahlia.jpg
+2023-10-03 12:40:16,723 - INFO - Parameters:
+image_path:  ./test_images/orange_dahlia.jpg
+Model:  image_classifier_model.h5
+Top K:  5
+Category Names:  label_map.json
+Loading model...
+..........................................
+Summary of loaded model:
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ keras_layer (KerasLayer)    (None, 1280)              2257984   
+                                                                 
+ batch_normalization_8 (Bat  (None, 1280)              5120      
+ chNormalization)                                                
+                                                                 
+ dense_10 (Dense)            (None, 512)               655872    
+                                                                 
+ dropout_8 (Dropout)         (None, 512)               0         
+                                                                 
+ batch_normalization_9 (Bat  (None, 512)               2048      
+ chNormalization)                                                
+                                                                 
+ dense_11 (Dense)            (None, 256)               131328    
+                                                                 
+ dropout_9 (Dropout)         (None, 256)               0         
+                                                                 
+ batch_normalization_10 (Ba  (None, 256)               1024      
+ tchNormalization)                                               
+                                                                 
+ dense_12 (Dense)            (None, 128)               32896     
+                                                                 
+ dropout_10 (Dropout)        (None, 128)               0         
+                                                                 
+ batch_normalization_11 (Ba  (None, 128)               512       
+ tchNormalization)                                               
+                                                                 
+ dense_13 (Dense)            (None, 64)                8256      
+                                                                 
+ dropout_11 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_14 (Dense)            (None, 102)               6630      
+                                                                 
+=================================================================
+Total params: 3101670 (11.83 MB)
+Trainable params: 839334 (3.20 MB)
+Non-trainable params: 2262336 (8.63 MB)
+_________________________________________________________________
+..........................................
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 3s 3s/step
+Probabilities: [0.85431, 0.077183, 0.049376, 0.00578, 0.004331]
+Classes: ['orange dahlia', 'english marigold', 'bishop of llandaff', 'osteospermum', 'barbeton daisy']
+
+2023-10-03 12:40:16,723 - ERROR - 2023-10-03 12:40:02.696549: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-03 12:40:02.696657: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-03 12:40:02.696719: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-03 12:40:02.707840: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 12:40:06.228340: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:06.235034: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:06.235160: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:06.237901: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:06.238004: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:06.238035: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:07.204873: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:07.204985: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:07.205004: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1977] Could not identify NUMA node of platform GPU id 0, defaulting to 0.  Your kernel may not have been built with NUMA support.
+2023-10-03 12:40:07.205073: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:07.205133: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4577 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1
+2023-10-03 12:40:14.303495: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8600
+
+2023-10-03 12:40:30,983 - INFO - Testing image: ./test_images/wild_pansy.jpg
+2023-10-03 12:40:30,983 - INFO - Parameters:
+image_path:  ./test_images/wild_pansy.jpg
+Model:  image_classifier_model.h5
+Top K:  5
+Category Names:  label_map.json
+Loading model...
+..........................................
+Summary of loaded model:
+Model: "sequential_2"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ keras_layer (KerasLayer)    (None, 1280)              2257984   
+                                                                 
+ batch_normalization_8 (Bat  (None, 1280)              5120      
+ chNormalization)                                                
+                                                                 
+ dense_10 (Dense)            (None, 512)               655872    
+                                                                 
+ dropout_8 (Dropout)         (None, 512)               0         
+                                                                 
+ batch_normalization_9 (Bat  (None, 512)               2048      
+ chNormalization)                                                
+                                                                 
+ dense_11 (Dense)            (None, 256)               131328    
+                                                                 
+ dropout_9 (Dropout)         (None, 256)               0         
+                                                                 
+ batch_normalization_10 (Ba  (None, 256)               1024      
+ tchNormalization)                                               
+                                                                 
+ dense_12 (Dense)            (None, 128)               32896     
+                                                                 
+ dropout_10 (Dropout)        (None, 128)               0         
+                                                                 
+ batch_normalization_11 (Ba  (None, 128)               512       
+ tchNormalization)                                               
+                                                                 
+ dense_13 (Dense)            (None, 64)                8256      
+                                                                 
+ dropout_11 (Dropout)        (None, 64)                0         
+                                                                 
+ dense_14 (Dense)            (None, 102)               6630      
+                                                                 
+=================================================================
+Total params: 3101670 (11.83 MB)
+Trainable params: 839334 (3.20 MB)
+Non-trainable params: 2262336 (8.63 MB)
+_________________________________________________________________
+..........................................
+
+1/1 [==============================] - ETA: 0s
+1/1 [==============================] - 3s 3s/step
+Probabilities: [0.964248, 0.024709, 0.006381, 0.003128, 0.001374]
+Classes: ['wild pansy', 'clematis', 'columbine', 'balloon flower', 'windflower']
+
+2023-10-03 12:40:30,983 - ERROR - 2023-10-03 12:40:17.278806: E tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:9342] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2023-10-03 12:40:17.278901: E tensorflow/compiler/xla/stream_executor/cuda/cuda_fft.cc:609] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2023-10-03 12:40:17.278937: E tensorflow/compiler/xla/stream_executor/cuda/cuda_blas.cc:1518] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2023-10-03 12:40:17.286991: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-10-03 12:40:20.221170: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:20.226986: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:20.227077: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:20.228461: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:20.228549: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:20.228586: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:21.139137: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:21.139268: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:21.139344: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1977] Could not identify NUMA node of platform GPU id 0, defaulting to 0.  Your kernel may not have been built with NUMA support.
+2023-10-03 12:40:21.139466: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:880] could not open file to read NUMA node: /sys/bus/pci/devices/0000:01:00.0/numa_node
+Your kernel may have been built without NUMA support.
+2023-10-03 12:40:21.139546: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1886] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4577 MB memory:  -> device: 0, name: NVIDIA GeForce GTX 1060, pci bus id: 0000:01:00.0, compute capability: 6.1
+2023-10-03 12:40:28.456474: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:442] Loaded cuDNN version 8600
+
